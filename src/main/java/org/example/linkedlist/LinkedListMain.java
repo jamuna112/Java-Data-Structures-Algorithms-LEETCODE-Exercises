@@ -20,6 +20,11 @@ public class LinkedListMain {
        ll.prepend(10);
        ll.printList();
 
+       //remove first node from the list
+       LinkedList.Node removeNode = ll.removeFirst();
+       System.out.println("Removed first node "+ removeNode.value);
+       ll.printList();
+
 
    }
 }
