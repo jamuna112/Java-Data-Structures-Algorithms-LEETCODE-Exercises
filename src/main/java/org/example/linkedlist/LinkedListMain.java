@@ -15,9 +15,10 @@ public class LinkedListMain {
        //remove last
       LinkedList.Node nn = ll.removeLastNode();
        System.out.println("removed node is " + nn.value);
-       ll.getHead();
-       ll.getTail();
-       ll.getLength();
+
+       //add a node in the beginning of the list
+       ll.prepend(10);
+       ll.printList();
 
 
    }
