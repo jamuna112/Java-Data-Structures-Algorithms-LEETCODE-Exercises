@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.linkedlist.LinkedList;
+import org.example.linkedlist.LinkedListMain;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,14 +13,8 @@ public class Main {
         System.out.println(cookieOne.getColor());
         System.out.println(cookieTwo.getColor());
 
-        LinkedList ll = new LinkedList(7);
-
-        ll.append(6);
-        ll.append(5);
-        ll.getHead();
-        ll.getTail();
-        ll.getLength();
-        ll.printList();
+        LinkedListMain llm = new LinkedListMain();
+        llm.invokeLinkedListAllFunctions();
 
 
 
