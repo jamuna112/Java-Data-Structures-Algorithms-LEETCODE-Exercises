@@ -7,10 +7,10 @@ public class LinkedListMain {
 
        ll.append(6);
        ll.append(5);
-       ll.getHead();
-       ll.getTail();
-       ll.getLength();
-       ll.printList();
+
+       //get node
+       LinkedList.Node getNode  = ll.get(1);
+       System.out.println("In index 1 we have "+getNode.value);
 
        //remove last
       LinkedList.Node nn = ll.removeLastNode();
@@ -24,6 +24,8 @@ public class LinkedListMain {
        LinkedList.Node removeNode = ll.removeFirst();
        System.out.println("Removed first node "+ removeNode.value);
        ll.printList();
+
+
 
 
    }
