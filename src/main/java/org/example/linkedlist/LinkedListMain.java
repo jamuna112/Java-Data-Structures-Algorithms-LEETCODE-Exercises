@@ -39,6 +39,11 @@ public class LinkedListMain {
        System.out.println("Removed first node "+ removeNode.value);
        ll.printList();
 
+       //reverse a linkedlist
+      LinkedList.Node rev =  ll.reverseLinkedlist();
+       System.out.println("reversed linked list head " + rev.value);
+
+
 
 
 

@@ -148,6 +148,20 @@ public class LinkedList {
         length--;
         return temp;
     }
+    public Node reverseLinkedlist(){
+
+        Node prev = null;
+        Node curr = head;
+        Node after = null;
+
+        while(curr != null){
+            after = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = after;
+        }
+        return prev;
+    }
 
     public void printList() {
         Node temp = head;
