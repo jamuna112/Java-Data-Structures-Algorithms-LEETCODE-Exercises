@@ -17,9 +17,18 @@ public class LinkedListMain {
        boolean setValue = ll.set(0, 11);
        System.out.println("Value set "+ setValue);
 
+       boolean insertValue = ll.insert(2, 23);
+       System.out.println("inserted value "+ insertValue);
+       ll.printList();
+
        //remove last
       LinkedList.Node nn = ll.removeLastNode();
        System.out.println("removed node is " + nn.value);
+
+       //remove
+       LinkedList.Node remNode = ll.remove(2);
+       System.out.println("remove node in between "+ remNode.value);
+       ll.printList();
 
        //add a node in the beginning of the list
        ll.prepend(10);
