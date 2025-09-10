@@ -12,6 +12,11 @@ public class LinkedListMain {
        LinkedList.Node getNode  = ll.get(1);
        System.out.println("In index 1 we have "+getNode.value);
 
+       ll.printList();
+       //set node value
+       boolean setValue = ll.set(0, 11);
+       System.out.println("Value set "+ setValue);
+
        //remove last
       LinkedList.Node nn = ll.removeLastNode();
        System.out.println("removed node is " + nn.value);
