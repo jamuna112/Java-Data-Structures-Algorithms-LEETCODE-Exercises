@@ -2,19 +2,18 @@ package org.example;
 
 import org.example.linkedlist.LinkedList;
 import org.example.linkedlist.LinkedListMain;
+import org.example.stack.Stack;
+import org.example.stack.StackMain;
 
 public class Main {
     public static void main(String[] args) {
-        Cookie cookieOne = new Cookie("Green");
-        Cookie cookieTwo = new Cookie("Red");
 
-        cookieOne.setColor("Yellow");
+//        LinkedListMain llm = new LinkedListMain();
+//        llm.invokeLinkedListAllFunctions();
 
-        System.out.println(cookieOne.getColor());
-        System.out.println(cookieTwo.getColor());
+        StackMain myStack = new StackMain();
+        myStack.invokeStackFunctionality();
 
-        LinkedListMain llm = new LinkedListMain();
-        llm.invokeLinkedListAllFunctions();
 
 
 
