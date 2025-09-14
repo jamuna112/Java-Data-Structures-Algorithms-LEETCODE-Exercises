@@ -32,7 +32,6 @@ public class LinkedListMain {
 
        //add a node in the beginning of the list
        ll.prepend(10);
-       ll.printList();
 
        //remove first node from the list
        LinkedList.Node removeNode = ll.removeFirst();
@@ -43,7 +42,15 @@ public class LinkedListMain {
       LinkedList.Node rev =  ll.reverseLinkedlist();
        System.out.println("reversed linked list head " + rev.value);
 
-
+    //remove duplicates
+       System.out.println("remove duplicates are ");
+       ll.prepend(20);
+       ll.prepend(30);
+       ll.prepend(20);
+       ll.prepend(30);
+       ll.printList();
+       ll.removeDuplicates();
+       ll.printList();
 
 
 

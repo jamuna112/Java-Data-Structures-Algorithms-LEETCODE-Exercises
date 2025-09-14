@@ -163,6 +163,24 @@ public class LinkedList {
         return prev;
     }
 
+    public void removeDuplicates(){
+        Node current = head;
+
+        while(current.next != null) {
+            Node runner = current;
+
+            while(runner.next != null) {
+                if(current.value == runner.next.value) {
+                    runner.next = runner.next.next;
+                    length--;
+                } else {
+                    runner = runner.next;
+                }
+            }
+            current = current.next;
+        }
+    }
+
     public void printList() {
         Node temp = head;
 
