@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.linkedlist.LinkedList;
 import org.example.linkedlist.LinkedListMain;
+import org.example.queue.QueueMain;
 import org.example.stack.Stack;
 import org.example.stack.StackMain;
 
@@ -11,8 +12,11 @@ public class Main {
 //        LinkedListMain llm = new LinkedListMain();
 //        llm.invokeLinkedListAllFunctions();
 
-        StackMain myStack = new StackMain();
-        myStack.invokeStackFunctionality();
+//        StackMain myStack = new StackMain();
+//        myStack.invokeStackFunctionality();
+
+        QueueMain myQueue = new QueueMain();
+        myQueue.allTheQueueFunctions();
 
 
 
