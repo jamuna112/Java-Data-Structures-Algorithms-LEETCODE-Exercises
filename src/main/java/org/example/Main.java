@@ -12,11 +12,12 @@ public class Main {
 //        LinkedListMain llm = new LinkedListMain();
 //        llm.invokeLinkedListAllFunctions();
 
-//        StackMain myStack = new StackMain();
-//        myStack.invokeStackFunctionality();
+        StackMain myStack = new StackMain();
+        myStack.invokeStackFunctionality();
 
-        QueueMain myQueue = new QueueMain();
-        myQueue.allTheQueueFunctions();
+//        QueueMain myQueue = new QueueMain();
+//        myQueue.allTheQueueFunctions();
+
 
 
 

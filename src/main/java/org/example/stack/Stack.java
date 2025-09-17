@@ -1,6 +1,6 @@
 package org.example.stack;
 
-public class Stack {
+public class Stack<C> {
 
     private Node top;
     private int height;
