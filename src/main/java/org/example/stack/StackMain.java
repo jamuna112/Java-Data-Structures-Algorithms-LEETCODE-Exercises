@@ -14,5 +14,8 @@ public class StackMain {
         ReverseString rs = new ReverseString();
         String name = rs.reverseString("word");
         System.out.println("your reverse name is "+ name);
+        BalancedParentheses bp = new BalancedParentheses();
+       boolean isBalanced = bp.isBalancedParentheses("({[]})");
+        System.out.println("Parantheses balance is "+isBalanced);
     }
 }
