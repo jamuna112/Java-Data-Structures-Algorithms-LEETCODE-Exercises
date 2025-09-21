@@ -22,6 +22,15 @@ public class MyQueue {
 
     }
 
+    public Integer dequeueUsingStack(){
+
+        if(stack1.isEmpty()){
+            return null;
+        } else {
+           return stack1.pop();
+        }
+    }
+
 
     public void printQueue() {
 

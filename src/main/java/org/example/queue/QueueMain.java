@@ -22,5 +22,9 @@ public class QueueMain {
         myQueue.enqueueWithTwoStack(6);
         myQueue.printQueue();
 
+        System.out.println("Dequeue Using Stacks: ");
+        myQueue.dequeueUsingStack();
+        myQueue.printQueue();
+
     }
 }
