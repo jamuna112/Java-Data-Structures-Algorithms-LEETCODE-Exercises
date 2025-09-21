@@ -15,7 +15,12 @@ public class QueueMain {
         queue.getLast();
         queue.getLength();
 
-
+        MyQueue myQueue = new MyQueue();
+        System.out.println("Queue Using Stacks: Enqueue");
+        myQueue.enqueueWithTwoStack(8);
+        myQueue.enqueueWithTwoStack(11);
+        myQueue.enqueueWithTwoStack(6);
+        myQueue.printQueue();
 
     }
 }
