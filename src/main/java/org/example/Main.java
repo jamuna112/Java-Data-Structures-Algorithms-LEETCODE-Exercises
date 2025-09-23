@@ -22,6 +22,16 @@ public class Main {
         BinarySearchTree bst = new BinarySearchTree();
         System.out.println("Root = "+ bst.getRoot());
 
+        bst.insert(47);
+        bst.insert(21);
+        bst.insert(76);
+        bst.insert(18);
+        bst.insert(52);
+        bst.insert(82);
+
+      boolean isContain =  bst.contain(1);
+        System.out.println("Given value is "+ isContain);
+
 
 
 
