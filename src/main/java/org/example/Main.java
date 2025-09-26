@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.hashtables.HashTable;
 import org.example.linkedlist.LinkedList;
 import org.example.linkedlist.LinkedListMain;
 import org.example.queue.QueueMain;
@@ -19,18 +20,21 @@ public class Main {
 //        QueueMain myQueue = new QueueMain();
 //        myQueue.allTheQueueFunctions();
 
-        BinarySearchTree bst = new BinarySearchTree();
-        System.out.println("Root = "+ bst.getRoot());
+//        BinarySearchTree bst = new BinarySearchTree();
+//        System.out.println("Root = "+ bst.getRoot());
+//
+//        bst.insert(47);
+//        bst.insert(21);
+//        bst.insert(76);
+//        bst.insert(18);
+//        bst.insert(52);
+//        bst.insert(82);
+//
+//      boolean isContain =  bst.contain(1);
+//      System.out.println("Given value is "+ isContain);
 
-        bst.insert(47);
-        bst.insert(21);
-        bst.insert(76);
-        bst.insert(18);
-        bst.insert(52);
-        bst.insert(82);
-
-      boolean isContain =  bst.contain(1);
-        System.out.println("Given value is "+ isContain);
+        HashTable ht = new HashTable();
+        ht.printTable();
 
 
 
