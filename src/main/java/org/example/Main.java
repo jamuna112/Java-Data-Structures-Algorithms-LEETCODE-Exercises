@@ -8,6 +8,8 @@ import org.example.stack.Stack;
 import org.example.stack.StackMain;
 import org.example.trees.BinarySearchTree;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -37,11 +39,21 @@ public class Main {
         ht.set("nails", 400);
         ht.set("bolts", 100);
         ht.set("lumber", 300);
+        ht.set("placa", 150);
        int val =  ht.get("bolts");
        int val1 =  ht.get("nails");
+       ht.printTable();
 
         System.out.println("Value of given key is "+ val);
         System.out.println("Value of given key is "+ val1);
+
+       ArrayList<String> keys =  ht.keys();
+       System.out.println("List of keys "+ keys);
+
+       int[] arr1 = {7, 4, 5};
+       int[] arr2 = {1, 2, 7};
+      boolean iscommon =  ht.itemInCommon(arr1, arr2);
+        System.out.println("have common "+iscommon);
 
 
 

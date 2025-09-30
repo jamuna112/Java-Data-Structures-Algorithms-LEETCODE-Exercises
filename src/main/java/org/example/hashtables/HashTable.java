@@ -1,5 +1,9 @@
 package org.example.hashtables;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class HashTable {
 
     private int size = 5;
@@ -68,6 +72,33 @@ public class HashTable {
             temp = temp.next;
         }
         return 0;
+    }
+
+    public ArrayList keys(){
+        ArrayList<String> allKeys = new ArrayList<>();
+
+        for(int i = 0; i < dataMap.length; i++){
+            Node temp = dataMap[i];
+            while(temp != null){
+                allKeys.add(temp.key);
+                temp = temp.next;
+            }
+        }
+        return allKeys;
+    }
+
+    public boolean itemInCommon(int[] array1, int[] array2){
+        HashMap<Integer, Boolean> myHashMap = new HashMap<>();
+
+        for(int i: array1){
+            myHashMap.put(i, true);
+        }
+        for(int j: array2){
+            if(myHashMap.get(j) != null){
+                return true;
+            }
+        }
+        return false;
     }
 
 }
