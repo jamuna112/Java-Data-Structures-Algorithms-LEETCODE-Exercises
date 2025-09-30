@@ -34,7 +34,16 @@ public class Main {
 //      System.out.println("Given value is "+ isContain);
 
         HashTable ht = new HashTable();
-        ht.printTable();
+        ht.set("nails", 400);
+        ht.set("bolts", 100);
+        ht.set("lumber", 300);
+       int val =  ht.get("bolts");
+       int val1 =  ht.get("nails");
+
+        System.out.println("Value of given key is "+ val);
+        System.out.println("Value of given key is "+ val1);
+
+
 
 
 
