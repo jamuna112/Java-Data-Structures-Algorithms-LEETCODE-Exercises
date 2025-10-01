@@ -118,4 +118,20 @@ public class HashTable {
         return duplicates;
     }
 
+    public Character firstNonRepeatingChar(String word){
+        HashMap<Character, Integer> charCount = new HashMap<>();
+
+        for(int i = 0; i < word.length(); i++){
+            char cha = word.charAt(i);
+            charCount.put(cha, charCount.getOrDefault(cha, 0)+1);
+        }
+        for(int i = 0; i < word.length(); i++){
+            char c = word.charAt(i);
+            if(charCount.get(c) == 1){
+                return c;
+            }
+        }
+        return null;
+    }
+
 }

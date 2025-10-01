@@ -59,6 +59,8 @@ public class Main {
 
         System.out.println("Duplicate entry list: "+ht.duplicates(array));
 
+        String word = "success";
+        System.out.println("Success has '"+ ht.firstNonRepeatingChar(word) + "' non repeating character");
 
 
 
