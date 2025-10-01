@@ -52,8 +52,12 @@ public class Main {
 
        int[] arr1 = {7, 4, 5};
        int[] arr2 = {1, 2, 7};
-      boolean iscommon =  ht.itemInCommon(arr1, arr2);
-        System.out.println("have common "+iscommon);
+       boolean iscommon =  ht.itemInCommon(arr1, arr2);
+       System.out.println("have common "+iscommon);
+
+       int[] array = {4, 3, 2, 7, 8, 2, 3, 1};
+
+        System.out.println("Duplicate entry list: "+ht.duplicates(array));
 
 
 

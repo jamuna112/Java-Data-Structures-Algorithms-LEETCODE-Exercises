@@ -3,6 +3,8 @@ package org.example.hashtables;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class HashTable {
 
@@ -99,6 +101,21 @@ public class HashTable {
             }
         }
         return false;
+    }
+
+    public List<Integer> duplicates(int[] nums){
+        HashMap<Integer, Integer> numCounts = new HashMap<>();
+        ArrayList<Integer> duplicates = new ArrayList<>();
+
+        for(int i: nums){
+            numCounts.put(i, numCounts.getOrDefault(i, 0)+1);
+        }
+        for(Map.Entry<Integer, Integer> entry: numCounts.entrySet()){
+            if(entry.getValue() > 1){
+                duplicates.add(entry.getKey());
+            }
+        }
+        return duplicates;
     }
 
 }
