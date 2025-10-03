@@ -1,10 +1,7 @@
 package org.example.hashtables;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class HashTable {
 
@@ -132,6 +129,25 @@ public class HashTable {
             }
         }
         return null;
+    }
+    public List<List<String>> groupAnagrams(String[] strings){
+        HashMap<String, List<String>> anagramsGroup = new HashMap<>();
+
+        for(String string: strings) {
+            char[] chars = string.toCharArray();
+            Arrays.sort(chars);
+
+            String canonical = new String(chars);
+            System.out.println("stings "+ canonical);
+            if(anagramsGroup.containsKey(canonical)){
+                anagramsGroup.get(canonical).add(string);
+            } else {
+                List<String> group = new ArrayList<>();
+                group.add(string);
+                anagramsGroup.put(canonical, group);
+            }
+        }
+        return new ArrayList<>(anagramsGroup.values());
     }
 
 }
