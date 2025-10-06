@@ -93,6 +93,10 @@ public class Main {
        List<Integer> lst =  mht.removeDuplicates(myList);
         System.out.println("Set contains "+ lst);
 
+        String string = "Greetings";
+        boolean hasUniqueChar = mht.hasUniqueChars(string);
+        System.out.println("Given character is uniquely "+ hasUniqueChar);
+
 
 
 

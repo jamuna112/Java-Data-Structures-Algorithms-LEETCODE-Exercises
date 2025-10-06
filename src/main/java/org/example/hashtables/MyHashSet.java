@@ -33,4 +33,18 @@ public class MyHashSet {
 
         return new ArrayList<>(setList);
     }
+
+    public boolean hasUniqueChars(String string){
+        Set<Character> charSet = new HashSet<>();
+
+        //for(char ch : string.toCharArray()){
+        for(int i = 0; i < string.length(); i++){
+            char ch = string.charAt(i);
+            if (charSet.contains(ch)){
+                return false;
+            }
+            charSet.add(ch);
+        }
+        return true;
+    }
 }
