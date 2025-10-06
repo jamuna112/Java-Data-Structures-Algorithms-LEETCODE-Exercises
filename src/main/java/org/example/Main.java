@@ -9,6 +9,7 @@ import org.example.stack.StackMain;
 import org.example.trees.BinarySearchTree;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -66,6 +67,11 @@ public class Main {
 
        String[] list = {"eat", "tea", "tan", "ate", "nat", "bat"};
         System.out.println(ht.groupAnagrams(list));
+
+        int[] nums = {2, 7, 11, 15};
+        int target = 9;
+        int[] output = ht.twoSum(nums, target );
+        System.out.println("output index is "+ Arrays.toString(output));
 
 
 

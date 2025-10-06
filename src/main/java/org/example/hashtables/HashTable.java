@@ -150,4 +150,19 @@ public class HashTable {
         return new ArrayList<>(anagramsGroup.values());
     }
 
+    public int[] twoSum(int[]nums, int target){
+        HashMap<Integer, Integer> seenNum = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++){
+            int num = nums[i];
+            int needed = target - num;
+
+            if(seenNum.containsKey(needed)){
+                return new int[]{seenNum.get(needed), i};
+            }
+            seenNum.put(num, i);
+        }
+        return new int[]{};
+    }
+
 }
