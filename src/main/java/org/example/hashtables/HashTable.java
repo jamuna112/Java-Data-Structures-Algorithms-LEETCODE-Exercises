@@ -165,4 +165,22 @@ public class HashTable {
         return new int[]{};
     }
 
+    public int[] subarraySum(int[] nums, int target){
+        HashMap<Integer, Integer> indexSum = new HashMap<>();
+
+        indexSum.put(0, -1);
+        int currentSum = 0;
+
+        for(int i = 0; i < nums.length; i++){
+            currentSum += nums[i];
+            int needed = currentSum - target;
+
+            if(indexSum.containsKey(needed)){
+                return new int[] {indexSum.get(needed)+1, i};
+            }
+            indexSum.put(currentSum,i);
+        }
+        return new int[]{};
+    }
+
 }

@@ -73,6 +73,12 @@ public class Main {
         int[] output = ht.twoSum(nums, target );
         System.out.println("output index is "+ Arrays.toString(output));
 
+        int[] nums2 = {1, 2, 3, 4, 5};
+        int target2 = 9;
+        int[] output2 = ht.subarraySum(nums2, target2);
+
+        System.out.println("output index is "+ Arrays.toString(output2));
+
 
 
 
