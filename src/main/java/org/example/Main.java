@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.hashtables.HashTable;
+import org.example.hashtables.MyHashSet;
 import org.example.linkedlist.LinkedList;
 import org.example.linkedlist.LinkedListMain;
 import org.example.queue.QueueMain;
@@ -78,6 +79,19 @@ public class Main {
         int[] output2 = ht.subarraySum(nums2, target2);
 
         System.out.println("output index is "+ Arrays.toString(output2));
+
+        MyHashSet mht = new MyHashSet();
+        mht.createHashSet();
+
+        List<Integer> myList = new ArrayList<>();
+        myList.add(11);
+        myList.add(12);
+        myList.add(13);
+        myList.add(12);
+        myList.add(11);
+
+       List<Integer> lst =  mht.removeDuplicates(myList);
+        System.out.println("Set contains "+ lst);
 
 
 
