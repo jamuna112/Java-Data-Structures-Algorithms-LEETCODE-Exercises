@@ -108,6 +108,10 @@ public class Main {
             System.out.println(Arrays.toString(pair));
         }
 
+        int[] array3 = {100, 4, 200, 1, 3, 2};
+        int longestSequence = mht.longestConsecutiveSequence(array3);
+        System.out.println("longest sequence number is "+longestSequence);
+
 
     }
 }
