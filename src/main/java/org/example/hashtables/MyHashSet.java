@@ -47,4 +47,19 @@ public class MyHashSet {
         }
         return true;
     }
+    public List<int[]> findPairs(int[] arr1, int[] arr2, int target){
+        Set<Integer> mySet = new HashSet<>();
+        List<int[]> arrayList = new ArrayList<>();
+
+        for(int num: arr1){
+            mySet.add(num);
+        }
+        for(int num: arr2){
+            int needed = target - num;
+            if(mySet.contains(needed)){
+                arrayList.add(new int[]{needed, num});
+            }
+        }
+        return arrayList;
+    }
 }

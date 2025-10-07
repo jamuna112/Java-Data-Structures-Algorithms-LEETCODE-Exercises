@@ -98,6 +98,15 @@ public class Main {
         System.out.println("Given character is uniquely "+ hasUniqueChar);
 
 
+        int[] array1 = {1, 2, 3, 4, 5};
+        int[] array2 = {2, 4, 6, 8, 10};
+        int target3 = 7;
+
+        List<int[]> result = mht.findPairs(array1, array2, target3);
+
+        for(int[] pair: result){
+            System.out.println(Arrays.toString(pair));
+        }
 
 
     }
