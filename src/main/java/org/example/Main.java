@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.graph.Graph;
 import org.example.hashtables.HashTable;
 import org.example.hashtables.MyHashSet;
 import org.example.linkedlist.LinkedList;
@@ -38,80 +39,88 @@ public class Main {
 //      boolean isContain =  bst.contain(1);
 //      System.out.println("Given value is "+ isContain);
 
-        HashTable ht = new HashTable();
-        ht.set("nails", 400);
-        ht.set("bolts", 100);
-        ht.set("lumber", 300);
-        ht.set("placa", 150);
-       int val =  ht.get("bolts");
-       int val1 =  ht.get("nails");
-       ht.printTable();
+        //===== HashSet and HashSet ======
+//        HashTable ht = new HashTable();
+//        ht.set("nails", 400);
+//        ht.set("bolts", 100);
+//        ht.set("lumber", 300);
+//        ht.set("placa", 150);
+//       int val =  ht.get("bolts");
+//       int val1 =  ht.get("nails");
+//       ht.printTable();
+//
+//        System.out.println("Value of given key is "+ val);
+//        System.out.println("Value of given key is "+ val1);
+//
+//       ArrayList<String> keys =  ht.keys();
+//       System.out.println("List of keys "+ keys);
+//
+//       int[] arr1 = {7, 4, 5};
+//       int[] arr2 = {1, 2, 7};
+//       boolean iscommon =  ht.itemInCommon(arr1, arr2);
+//       System.out.println("have common "+iscommon);
+//
+//       int[] array = {4, 3, 2, 7, 8, 2, 3, 1};
+//
+//        System.out.println("Duplicate entry list: "+ht.duplicates(array));
+//
+//        String word = "success";
+//        System.out.println("Success has '"+ ht.firstNonRepeatingChar(word) + "' non repeating character");
+//
+//
+//       String[] list = {"eat", "tea", "tan", "ate", "nat", "bat"};
+//        System.out.println(ht.groupAnagrams(list));
+//
+//        int[] nums = {2, 7, 11, 15};
+//        int target = 9;
+//        int[] output = ht.twoSum(nums, target );
+//        System.out.println("output index is "+ Arrays.toString(output));
+//
+//        int[] nums2 = {1, 2, 3, 4, 5};
+//        int target2 = 9;
+//        int[] output2 = ht.subarraySum(nums2, target2);
+//
+//        System.out.println("output index is "+ Arrays.toString(output2));
+//
+//        MyHashSet mht = new MyHashSet();
+//        mht.createHashSet();
+//
+//        List<Integer> myList = new ArrayList<>();
+//        myList.add(11);
+//        myList.add(12);
+//        myList.add(13);
+//        myList.add(12);
+//        myList.add(11);
+//
+//       List<Integer> lst =  mht.removeDuplicates(myList);
+//        System.out.println("Set contains "+ lst);
+//
+//        String string = "Greetings";
+//        boolean hasUniqueChar = mht.hasUniqueChars(string);
+//        System.out.println("Given character is uniquely "+ hasUniqueChar);
+//
+//
+//        int[] array1 = {1, 2, 3, 4, 5};
+//        int[] array2 = {2, 4, 6, 8, 10};
+//        int target3 = 7;
+//
+//        List<int[]> result = mht.findPairs(array1, array2, target3);
+//
+//        for(int[] pair: result){
+//            System.out.println(Arrays.toString(pair));
+//        }
+//
+//        int[] array3 = {100, 4, 200, 1, 3, 2};
+//        int longestSequence = mht.longestConsecutiveSequence(array3);
+//        System.out.println("longest sequence number is "+longestSequence);
 
-        System.out.println("Value of given key is "+ val);
-        System.out.println("Value of given key is "+ val1);
+        // ======= Graph =======
+        Graph myGraph = new Graph();
+        myGraph.addVertex("A");
+        myGraph.addVertex("B");
 
-       ArrayList<String> keys =  ht.keys();
-       System.out.println("List of keys "+ keys);
-
-       int[] arr1 = {7, 4, 5};
-       int[] arr2 = {1, 2, 7};
-       boolean iscommon =  ht.itemInCommon(arr1, arr2);
-       System.out.println("have common "+iscommon);
-
-       int[] array = {4, 3, 2, 7, 8, 2, 3, 1};
-
-        System.out.println("Duplicate entry list: "+ht.duplicates(array));
-
-        String word = "success";
-        System.out.println("Success has '"+ ht.firstNonRepeatingChar(word) + "' non repeating character");
-
-
-       String[] list = {"eat", "tea", "tan", "ate", "nat", "bat"};
-        System.out.println(ht.groupAnagrams(list));
-
-        int[] nums = {2, 7, 11, 15};
-        int target = 9;
-        int[] output = ht.twoSum(nums, target );
-        System.out.println("output index is "+ Arrays.toString(output));
-
-        int[] nums2 = {1, 2, 3, 4, 5};
-        int target2 = 9;
-        int[] output2 = ht.subarraySum(nums2, target2);
-
-        System.out.println("output index is "+ Arrays.toString(output2));
-
-        MyHashSet mht = new MyHashSet();
-        mht.createHashSet();
-
-        List<Integer> myList = new ArrayList<>();
-        myList.add(11);
-        myList.add(12);
-        myList.add(13);
-        myList.add(12);
-        myList.add(11);
-
-       List<Integer> lst =  mht.removeDuplicates(myList);
-        System.out.println("Set contains "+ lst);
-
-        String string = "Greetings";
-        boolean hasUniqueChar = mht.hasUniqueChars(string);
-        System.out.println("Given character is uniquely "+ hasUniqueChar);
-
-
-        int[] array1 = {1, 2, 3, 4, 5};
-        int[] array2 = {2, 4, 6, 8, 10};
-        int target3 = 7;
-
-        List<int[]> result = mht.findPairs(array1, array2, target3);
-
-        for(int[] pair: result){
-            System.out.println(Arrays.toString(pair));
-        }
-
-        int[] array3 = {100, 4, 200, 1, 3, 2};
-        int longestSequence = mht.longestConsecutiveSequence(array3);
-        System.out.println("longest sequence number is "+longestSequence);
-
+        myGraph.addEdge("A", "B");
+        myGraph.printGraph();
 
     }
 }
